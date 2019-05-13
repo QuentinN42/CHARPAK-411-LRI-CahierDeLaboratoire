@@ -1,5 +1,3 @@
 {
-    "A" : "PrenomA \\textsc{NomA}",
-    "B" : "PrenomB \\textsc{NomB}",
-    "C" : "PrenomC \\textsc{NomC}"
+    "A" : "Quentin \\textsc{Lieumont}"
 }
