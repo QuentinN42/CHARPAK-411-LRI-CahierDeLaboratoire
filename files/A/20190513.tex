@@ -1,1 +1,36 @@
-﻿None
+﻿Ce matin, Roman \textsc{Bresson}, un thesard m'a présenté sa thèse : \\
+
+
+Données utilisées:
+\begin{itemize}
+    \item Data set public
+    \item Entre 6 et 15 critères.
+    \item Entre 200 et 1600 donnés
+\end{itemize}
+
+
+Des informations m'ont étés comuniquées sur le python :
+\begin{itemize}
+    \item Choquet de base
+    \item Ctypes pour importer des fonctions en C
+\end{itemize}
+
+
+Le réseau de neurones utilisé est configuré de la maniere suivante :
+\begin{itemize}
+     \item Vecteur X en entré
+     \item Réseau de neurone -> dit si une le choix est "bon" ou pas.
+     \item Extraction du réseau : les `ui` et les `wij` de par son architecture.
+     \item Regression : testé avec des gaussiene et des sigmoides
+     \item Modele : trois sommes :
+        \begin{equation}
+            \sum_{i=1}^{n}
+                w_i \times u_i +
+            \sum_{i=1}^{n}\sum_{j=i+1}^{n}
+            \Big(
+                w_{M\,ij} \times max(ui,uj) + w_{m\,ij} \times min(ui,uj)
+            \Big)
+        \end{equation}
+    \item Probleme : \\
+        On ne sait pas combien en mettre de regression pour etre au plus proche des donné sans faire de l'overfeeting.
+\end{itemize}
