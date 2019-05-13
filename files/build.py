@@ -50,4 +50,4 @@ for day in alldays:
 out.close()
 
 
-print("\n\n\n\n"+open("result.tex","r").read())
+print("\n\n\n\n"+open("result.tex", "r").read())
