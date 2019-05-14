@@ -1,4 +1,5 @@
-﻿Ce matin, Roman \textsc{Bresson}, un thesard m'a présenté sa thèse : \\
+﻿\subsubsection*{Le matin :}
+Ce matin, Roman \textsc{Bresson}, un thesard m'a présenté sa thèse : \\
 
 
 Données utilisées:
@@ -25,6 +26,7 @@ Le réseau de neurones utilisé est configuré de la maniere suivante :
      \item Regression : testé avec des gaussiene et des sigmoides
      \item Modele : trois sommes :
         \begin{equation}
+            \label{choquet}
             \sum_{i=1}^{n}
                 w_i \times u_i +
             \sum_{i=1}^{n}\sum_{j=i+1}^{n}
@@ -35,3 +37,12 @@ Le réseau de neurones utilisé est configuré de la maniere suivante :
     \item Probleme : \\
         On ne sait pas combien en mettre de regression pour etre au plus proche des donné sans faire de l'overfeeting.
 \end{itemize}
+
+\subsubsection*{L'après midi :}
+Un premier réseau de neurones à été créé afin que je me familliarise avec ces nouvelles notions.
+J'utilise la librairie keras\cite{keras} (Python).
+
+
+Le premier reseau est assez simple : Il fait une somme pondérée.
+C'est la première partie de la formule\ref{choquet}, j'ai aussi trouvé un lien pour faire le max/min de plusieurs
+noeuds mais je ne sait pas l'implementer.
