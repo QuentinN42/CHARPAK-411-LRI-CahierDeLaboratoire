@@ -1,0 +1,27 @@
+\subsubsection*{Le matin :}
+L'ensemble des commandes ont été recodées et commantées afin de simplifier leur utilisation. \\
+Une libraire Useful à été créée, elle contient les fichiers suivants :
+
+\begin{itemize}
+    \item[\textcolor{blue}{functions.py }:] Un module contenant les fonctions utiles de nombreuses fois.
+    \item[\textcolor{blue}{data.py }:] Un module permetant de generer des données.
+    \item[\textcolor{blue}{network.py }:] Un module permetant de generer un reseau de neurone addaptatif.
+    \item[\textcolor{blue}{simpleNetwork.py }:] Un module permetant de generer en une ligne un reseau simple de regression.
+\end{itemize}
+
+\subsubsection*{L'après midi :}
+Le module \textcolor{blue}{choquet.py} à été codé :
+Il permet :
+\begin{itemize}
+    \item De configurer une fonction qui applique la formule (\ref{choquet}) (class Choquet).
+    \item De générer des données qui collent avec cette fonction (class ChoquetData).
+    \item De générer un réseau de neurones qui régresse cette fonction grace a ces données (class ChoquetNetwork).
+\end{itemize}
+
+La generation des données est cependant tres longue (environ 2m40).
+Il serait bien de generer une base de données ce soir afin d'accelerer le calcul.
+Les fonctions write_json et get_json ont été importées afin de simplifier la creation de la base de données.
+
+\subsubsection*{Le soir :}
+Apres reflexion, la class ChoquetData ne presente pas de valeur ajouté, elle a donc été fusionné avec la class Data.
+On peut sauvegarder des données via la méthode Data.save(lien).
