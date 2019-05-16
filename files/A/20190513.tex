@@ -27,11 +27,12 @@ Le réseau de neurones utilisé est configuré de la maniere suivante :
      \item Modele : trois sommes :
         \begin{equation}
             \label{choquet}
-            \sum_{i=1}^{n}
-                w_i \times u_i +
+        C_n (X)  =
+        \sum_{i=1}^{n}
+                w_i \times x_i +
             \sum_{i=1}^{n}\sum_{j=i+1}^{n}
             \Big(
-                w_{M\,ij} \times max(ui,uj) + w_{m\,ij} \times min(ui,uj)
+                w_{M\,ij} \times \max(x_i,x_j) + w_{m\,ij} \times \min(x_i,x_j)
             \Big)
         \end{equation}
     \item Probleme : \\
